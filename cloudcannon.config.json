@@ -1,1 +1,71 @@
+{
+  "inputs": {
+    "hero_headline": { "type": "text" },
+    "hero_subheadline": { "type": "text" },
+    "hero_cta_1": { "type": "text" },
+    "hero_cta_2": { "type": "text" },
+    "hero_image": { "type": "image" },
+
+    "why_headline": { "type": "text" },
+    "why_subheadline": { "type": "textarea" },
+    "why_point1": { "type": "text" },
+    "why_point2": { "type": "text" },
+    "why_point3": { "type": "text" },
+    "why_point4": { "type": "text" },
+
+    "packages_headline": { "type": "text" },
+    "packages_footer": { "type": "text" },
+    "package1_title": { "type": "text" },
+    "package1_price": { "type": "text" },
+    "package1_subheadline": { "type": "text" },
+    "package1_feature1": { "type": "text" },
+    "package1_feature2": { "type": "text" },
+    "package1_feature3": { "type": "text" },
+    "package2_title": { "type": "text" },
+    "package2_price": { "type": "text" },
+    "package2_subheadline": { "type": "text" },
+    "package2_feature1": { "type": "text" },
+    "package2_feature2": { "type": "text" },
+    "package2_feature3": { "type": "text" },
+    "package3_title": { "type": "text" },
+    "package3_price": { "type": "text" },
+    "package3_subheadline": { "type": "text" },
+    "package3_feature1": { "type": "text" },
+    "package3_feature2": { "type": "text" },
+    "package3_feature3": { "type": "text" },
+
+    "testimonials_headline": { "type": "text" },
+    "testimonials_subheadline": { "type": "text" },
+    "testimonial1_name": { "type": "text" },
+    "testimonial1_quote": { "type": "textarea" },
+    "testimonial2_name": { "type": "text" },
+    "testimonial2_quote": { "type": "textarea" },
+    "testimonial3_name": { "type": "text" },
+    "testimonial3_quote": { "type": "textarea" },
+
+    "faq_headline": { "type": "text" },
+    "faq_subheadline": { "type": "text" },
+    "faq1_q": { "type": "text" },
+    "faq1_a": { "type": "markdown" },
+    "faq2_q": { "type": "text" },
+    "faq2_a": { "type": "markdown" },
+    "faq3_q": { "type": "text" },
+    "faq3_a": { "type": "markdown" },
+
+    "form_headline": { "type": "text" },
+    "form_text": { "type": "textarea" },
+    "form_action": { "type": "text", "label": "Form: Action URL (Formspree/Getform/Netlify)" },
+    "form_success_url": { "type": "text", "label": "Form: Danke-URL" },
+    "form_consent_text": { "type": "markdown", "label": "Form: Einwilligungstext" },
+    "form_privacy_hint": { "type": "text", "label": "Form: Hinweis" },
+    "form_placeholder_name": { "type": "text" },
+    "form_placeholder_email": { "type": "text" },
+    "form_placeholder_phone": { "type": "text" },
+
+    "cta_footer_headline": { "type": "text" },
+    "cta_footer_subheadline": { "type": "text" },
+    "cta_footer_button": { "type": "text" }
+  }
+}
+
 

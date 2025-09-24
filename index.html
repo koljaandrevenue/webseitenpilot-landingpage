@@ -1,1 +1,268 @@
+---
+lang: "de"
+hero_headline: "Deine neue Website – professionell & schnell mit Webseitenpilot"
+hero_subheadline: "Wir erstellen dir eine moderne Website mit AI & Experten-Know-how – in nur 24 Stunden bereit."
+hero_cta_1: "Kostenlose Vorschau anfordern"
+hero_cta_2: "So funktioniert’s"
+hero_image: "/assets/img/hero.jpg"
+
+why_headline: "Weshalb eine gute Website wichtig ist"
+why_subheadline: "Eine professionelle Website sorgt für mehr Kunden, Vertrauen und Umsatz. Veraltete Seiten kosten dich täglich potenzielle Kunden."
+why_point1: "Sichtbarkeit: Bessere Platzierungen bei Google"
+why_point2: "Vertrauen: Moderner Auftritt, der überzeugt"
+why_point3: "Conversion: Mehr Anfragen & Buchungen"
+why_point4: "Tempo: Inhalte selbst pflegen – ohne Agentur"
+
+packages_headline: "Unsere Pakete – so individuell wie dein Business"
+packages_footer: "Alle Pakete inklusive 2 Feedback-Runden"
+package1_title: "Starter"
+package1_price: "€690 einmalig"
+package1_subheadline: "Perfekt für kleine Unternehmen & Selbstständige"
+package1_feature1: "1 professionelle Website mit bis zu 5 Seiten"
+package1_feature2: "Responsive Design für alle Geräte"
+package1_feature3: "Anbindung an Google Maps & Social Media"
+package2_title: "Business"
+package2_price: "€1.190 einmalig"
+package2_subheadline: "Ideal für wachsende Unternehmen"
+package2_feature1: "Bis zu 10 Seiten & erweiterte Funktionen"
+package2_feature2: "SEO-Basispaket"
+package2_feature3: "Kontakt- & Anfrageformulare"
+package3_title: "Premium"
+package3_price: "€1.890 einmalig"
+package3_subheadline: "Für Unternehmen mit hohen Ansprüchen"
+package3_feature1: "Individuelles Design & volle Flexibilität"
+package3_feature2: "Unbegrenzte Seiten"
+package3_feature3: "Erweiterte Integrationen & Support"
+
+testimonials_headline: "Was unsere Kunden sagen"
+testimonials_subheadline: "Echte Stimmen von Unternehmern, die ihre Website mit Webseitenpilot neu gestartet haben."
+testimonial1_name: "Anna M."
+testimonial1_quote: "Unsere neue Website war innerhalb weniger Tage online und hat sofort mehr Kunden gebracht."
+testimonial2_name: "Markus H."
+testimonial2_quote: "Der Prozess war super einfach und schnell – das Ergebnis professionell und modern."
+testimonial3_name: "Sabine K."
+testimonial3_quote: "Endlich eine Website, die zu unserem Unternehmen passt!"
+
+faq_headline: "Häufige Fragen"
+faq_subheadline: "Alles, was du über Webseitenpilot wissen musst."
+faq1_q: "Wie schnell ist meine Website fertig?"
+faq1_a: "In der Regel liefern wir innerhalb von 24 Stunden nach deinem Briefing."
+faq2_q: "Kann ich die Website später selbst bearbeiten?"
+faq2_a: "Ja, du erhältst ein einfaches CMS, in dem du Inhalte jederzeit selbst anpassen kannst."
+faq3_q: "Gibt es versteckte Kosten?"
+faq3_a: "Nein. Du zahlst nur den einmaligen Paketpreis, ohne laufende Verpflichtungen."
+
+form_headline: "Kontakt aufnehmen – schnell & unverbindlich"
+form_text: "Unverbindlich, kostenlos und schnell: Wir melden uns persönlich bei Ihnen."
+form_action: ""
+form_success_url: "/danke.html"
+form_consent_text: "Ich stimme zu, dass meine Daten zur Kontaktaufnahme verwendet werden."
+form_privacy_hint: "Weitere Infos findest du in unserer Datenschutzerklärung."
+form_placeholder_name: "Ihr Name"
+form_placeholder_email: "E-Mail-Adresse"
+form_placeholder_phone: "Telefonnummer"
+
+cta_footer_headline: "Bereit für deine neue Website?"
+cta_footer_subheadline: "Fordere jetzt deine kostenlose Vorschau an – ganz unverbindlich."
+cta_footer_button: "Kostenlose Vorschau starten"
+---
+
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ hero_headline }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ hero_subheadline }}" />
+  <meta property="og:title" content="{{ hero_headline }}" />
+  <meta property="og:description" content="{{ hero_subheadline }}" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="antialiased text-gray-800">
+
+  <header class="sticky top-0 bg-white/80 backdrop-blur z-40 border-b">
+    <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="font-bold">Webseitenpilot</a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="#why">Warum</a>
+        <a href="#packages">Pakete</a>
+        <a href="#testimonials">Stimmen</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="font-medium">Kontakt</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded bg-black text-white">{{ hero_cta_1 }}</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="container mx-auto px-4 py-20 md:py-28">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4" data-editable>{{ hero_headline }}</h1>
+        <p class="text-lg md:text-xl mb-6" data-editable>{{ hero_subheadline }}</p>
+        <div class="flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded bg-black text-white">{{ hero_cta_1 }}</a>
+          <a href="#why" class="px-5 py-3 rounded border">{{ hero_cta_2 }}</a>
+        </div>
+      </div>
+      <div>
+        <img src="{{ hero_image }}" alt="Webseitenpilot – moderne Website" class="w-full h-auto rounded-xl shadow-lg" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ why_headline }}</h2>
+      <p class="text-gray-700 mb-8" data-editable>{{ why_subheadline }}</p>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="p-4 rounded-lg bg-white shadow-sm" data-editable>{{ why_point1 }}</li>
+        <li class="p-4 rounded-lg bg-white shadow-sm" data-editable>{{ why_point2 }}</li>
+        <li class="p-4 rounded-lg bg-white shadow-sm" data-editable>{{ why_point3 }}</li>
+        <li class="p-4 rounded-lg bg-white shadow-sm" data-editable>{{ why_point4 }}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ packages_headline }}</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <article class="p-6 border rounded-xl">
+          <h3 class="text-xl font-bold mb-1" data-editable>{{ package1_title }}</h3>
+          <p class="text-gray-500 mb-3" data-editable>{{ package1_subheadline }}</p>
+          <div class="text-2xl font-extrabold mb-4" data-editable>{{ package1_price }}</div>
+          <ul class="space-y-2">
+            <li data-editable>{{ package1_feature1 }}</li>
+            <li data-editable>{{ package1_feature2 }}</li>
+            <li data-editable>{{ package1_feature3 }}</li>
+          </ul>
+        </article>
+        <article class="p-6 border rounded-xl">
+          <h3 class="text-xl font-bold mb-1" data-editable>{{ package2_title }}</h3>
+          <p class="text-gray-500 mb-3" data-editable>{{ package2_subheadline }}</p>
+          <div class="text-2xl font-extrabold mb-4" data-editable>{{ package2_price }}</div>
+          <ul class="space-y-2">
+            <li data-editable>{{ package2_feature1 }}</li>
+            <li data-editable>{{ package2_feature2 }}</li>
+            <li data-editable>{{ package2_feature3 }}</li>
+          </ul>
+        </article>
+        <article class="p-6 border rounded-xl">
+          <h3 class="text-xl font-bold mb-1" data-editable>{{ package3_title }}</h3>
+          <p class="text-gray-500 mb-3" data-editable>{{ package3_subheadline }}</p>
+          <div class="text-2xl font-extrabold mb-4" data-editable>{{ package3_price }}</div>
+          <ul class="space-y-2">
+            <li data-editable>{{ package3_feature1 }}</li>
+            <li data-editable>{{ package3_feature2 }}</li>
+            <li data-editable>{{ package3_feature3 }}</li>
+          </ul>
+        </article>
+      </div>
+      <p class="text-sm text-gray-500 mt-4" data-editable>{{ packages_footer }}</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ testimonials_headline }}</h2>
+      <p class="text-gray-700 mb-8" data-editable>{{ testimonials_subheadline }}</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <figure class="p-6 bg-white rounded-xl shadow-sm">
+          <blockquote class="italic" data-editable>“{{ testimonial1_quote }}”</blockquote>
+          <figcaption class="mt-3 font-medium" data-editable>— {{ testimonial1_name }}</figcaption>
+        </figure>
+        <figure class="p-6 bg-white rounded-xl shadow-sm">
+          <blockquote class="italic" data-editable>“{{ testimonial2_quote }}”</blockquote>
+          <figcaption class="mt-3 font-medium" data-editable>— {{ testimonial2_name }}</figcaption>
+        </figure>
+        <figure class="p-6 bg-white rounded-xl shadow-sm">
+          <blockquote class="italic" data-editable>“{{ testimonial3_quote }}”</blockquote>
+          <figcaption class="mt-3 font-medium" data-editable>— {{ testimonial3_name }}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ faq_headline }}</h2>
+      <p class="text-gray-700 mb-8" data-editable>{{ faq_subheadline }}</p>
+      <div class="space-y-3">
+        <details class="p-4 border rounded-lg">
+          <summary class="font-medium cursor-pointer" data-editable>{{ faq1_q }}</summary>
+          <p class="mt-2 text-gray-700" data-editable>{{ faq1_a }}</p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="font-medium cursor-pointer" data-editable>{{ faq2_q }}</summary>
+          <p class="mt-2 text-gray-700" data-editable>{{ faq2_a }}</p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="font-medium cursor-pointer" data-editable>{{ faq3_q }}</summary>
+          <p class="mt-2 text-gray-700" data-editable>{{ faq3_a }}</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ form_headline }}</h2>
+      <p class="text-gray-700 mb-6" data-editable>{{ form_text }}</p>
+      <form action="{{ form_action }}" method="POST" class="space-y-4">
+        <input type="text" name="company_website" class="hidden" tabindex="-1" autocomplete="off">
+        <div>
+          <label for="name" class="block text-sm mb-1">Name</label>
+          <input id="name" name="name" type="text" placeholder="{{ form_placeholder_name }}" required class="w-full border rounded px-3 py-2">
+        </div>
+        <div>
+          <label for="email" class="block text-sm mb-1">E-Mail</label>
+          <input id="email" name="email" type="email" placeholder="{{ form_placeholder_email }}" required class="w-full border rounded px-3 py-2">
+        </div>
+        <div>
+          <label for="phone" class="block text-sm mb-1">Telefonnummer</label>
+          <input id="phone" name="phone" type="tel" placeholder="{{ form_placeholder_phone }}" class="w-full border rounded px-3 py-2">
+        </div>
+        <label class="flex items-start gap-2 text-sm">
+          <input type="checkbox" name="consent" required class="mt-1">
+          <span data-editable>{{ form_consent_text }}</span>
+        </label>
+        <input type="hidden" name="_subject" value="Neue Anfrage über Webseitenpilot">
+        <input type="hidden" name="_redirect" value="{{ form_success_url }}">
+        <button type="submit" class="w-full md:w-auto px-5 py-2 rounded bg-black text-white">{{ cta_footer_button }}</button>
+      </form>
+      <p class="text-sm text-gray-500 mt-3" data-editable>{{ form_privacy_hint }}</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2" data-editable>{{ cta_footer_headline }}</h2>
+      <p class="text-gray-700 mb-6" data-editable>{{ cta_footer_subheadline }}</p>
+      <a href="#contact" class="inline-block px-5 py-3 rounded bg-black text-white">{{ cta_footer_button }}</a>
+    </div>
+  </section>
+
+  <footer class="border-t py-8 text-center text-sm text-gray-500">
+    <div class="container mx-auto px-4">© Webseitenpilot</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){ e.preventDefault(); document.querySelector(id)?.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+</body>
+</html>
+
 
