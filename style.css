@@ -1,6 +1,12 @@
-.container{max-width:1152px}
-:focus{outline:2px solid #111; outline-offset:2px}
-summary{list-style:none}
-summary::-webkit-details-marker{display:none}
+:root {
+  --brand-primary: #2563eb; /* Blau */
+  --brand-accent: #f97316; /* Orange */
+}
 
+.btn-primary {
+  @apply bg-[var(--brand-primary)] text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700;
+}
 
+.btn-accent {
+  @apply bg-[var(--brand-accent)] text-white font-semibold px-4 py-2 rounded-lg hover:bg-orange-600;
+}
