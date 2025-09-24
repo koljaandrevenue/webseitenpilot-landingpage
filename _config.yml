@@ -1,0 +1,10 @@
+title: Webseitenpilot
+description: Moderne, schnelle Websites für KMU
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - node_modules
+  - README.md
+  - Gemfile
+  - Gemfile.lock
