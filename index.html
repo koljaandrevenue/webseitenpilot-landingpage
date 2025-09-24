@@ -67,18 +67,22 @@ cta_footer_subheadline: "Fordere jetzt deine kostenlose Vorschau an – ganz unv
 cta_footer_button: "Kostenlose Vorschau starten"
 ---
 
-<!doctype html>
+<<!doctype html>
 <html lang="{{ lang }}">
 <head>
   <meta charset="utf-8" />
-  <title>{{ hero_headline }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ hero_headline }}</title>
   <meta name="description" content="{{ hero_subheadline }}" />
-  <meta property="og:title" content="{{ hero_headline }}" />
-  <meta property="og:description" content="{{ hero_subheadline }}" />
+
+  <!-- SEO Plugin: generiert OG-Tags, Twitter Cards, JSON-LD -->
+  {% seo %}
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body class="antialiased text-gray-800">
 
   <header class="sticky top-0 bg-white/80 backdrop-blur z-40 border-b">
